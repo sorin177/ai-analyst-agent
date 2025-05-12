@@ -2,7 +2,16 @@
 
 An intelligent business analytics platform powered by LLMs that translates natural language questions into SQL queries, creates visualizations, and provides actionable insights.
 
-![Business Insights Agent Demo](demo_screenshot.png)
+## 📸 Screenshots
+
+### 1. Asking a question
+![Agent input prompt](images/agent_input.png)
+
+### 2. Employees per department & company-wide gender split
+![Bar + Pie charts](images/dept_gender_split.png)
+
+### 3. Overall gender distribution
+![Overall gender pie](images/gender_pie.png)
 
 ## Features
 
