@@ -7,10 +7,10 @@ An intelligent business analytics platform powered by LLMs that translates natur
 ### 1. Asking a question
 ![Agent input prompt](images/agent_input.png)
 
-### 2. Employees per department & company-wide gender split
+### 2. Employees per department
 ![Bar Graph](images/dept_numbers_split.png)
 
-### 3. Overall gender distribution
+### 3. Overall gender distribution & Follow-up
 ![Overall gender pie](images/gender_pie.png)
 
 ## Features
