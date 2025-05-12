@@ -1,4 +1,4 @@
-# Business Insights Agent 🧠
+# Business Insights Agent
 
 An intelligent business analytics platform powered by LLMs that translates natural language questions into SQL queries, creates visualizations, and provides actionable insights.
 
