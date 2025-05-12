@@ -49,8 +49,8 @@ An intelligent business analytics platform powered by LLMs that translates natur
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/yourusername/business-insights-agent.git
-   cd business-insights-agent
+   git clone https://github.com/tnickster/ai-analyst-agent.git
+   cd ai-analyst-agent
    ```
 
 2. Install dependencies
